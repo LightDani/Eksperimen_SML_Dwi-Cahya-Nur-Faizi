@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r preprocessing/requirements.txt
           
       - name: Run preprocessing script
         run: python preprocessing/automate_Dwi-Cahya-Nur-Faizi.py
