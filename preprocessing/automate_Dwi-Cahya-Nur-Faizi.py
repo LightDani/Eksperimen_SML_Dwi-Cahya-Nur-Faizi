@@ -141,7 +141,7 @@ def main():
         inplace=True,
     )
 
-    # save the processed dataset
+    # save the processed datasets
     output_dir = "preprocessing/personality_preprocessing"
     os.makedirs(output_dir, exist_ok=True)
 
