@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 
 
 def main():
-    # load the dataset
+    # load the dataset.
     dataset = pd.read_csv("../personality_raw.csv")
 
     # SPLIT DATASET INTO TRAINING AND TESTING SETS TO AVOID DATA LEAKAGE

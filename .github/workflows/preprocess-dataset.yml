@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - 'preprocess.py'
-      - 'requirements.txt'
+      - 'preprocessing/automate_Dwi-Cahya_Nur-Faizi.py'
+      - 'preprocessing/requirements.txt'
 
 jobs:
   run-preprocessing:
