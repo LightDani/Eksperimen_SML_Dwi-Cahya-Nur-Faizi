@@ -146,7 +146,7 @@ def main():
     os.makedirs(output_dir, exist_ok=True)
 
     train_dataset.to_csv(os.path.join(output_dir, "train.csv"), index=False)
-    test_dataset.to_csv(os.path.join(output_dir, "train.csv"), index=False)
+    test_dataset.to_csv(os.path.join(output_dir, "test.csv"), index=False)
 
 
 if __name__ == "__main__":
