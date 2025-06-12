@@ -37,6 +37,7 @@ jobs:
           git add preprocessing/personality_preprocessing/test.csv
 
           git commit -m "Update train/test datasets from workflow run" || echo "No changes to commit"
-          git push https://x-access-token:${GIT_TOKEN}@github.com/${{ github.repository }} HEAD:${{ github.ref }}
+          git push https://x-access-token:${GIT_TOKEN}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
+                   
         env:
           GIT_TOKEN: ${{ secrets.GH_PAT }}
