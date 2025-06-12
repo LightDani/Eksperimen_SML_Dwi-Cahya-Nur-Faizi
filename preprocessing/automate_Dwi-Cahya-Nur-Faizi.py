@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 
 def main():
     # load the dataset
-    dataset = pd.read_csv("../personality_raw.csv")
+    dataset = pd.read_csv("personality_raw.csv")
 
     # SPLIT DATASET INTO TRAINING AND TESTING SETS TO AVOID DATA LEAKAGE
     X = dataset.iloc[:, :-1]
@@ -141,8 +141,8 @@ def main():
     )
 
     # save the processed dataset
-    dataset.to_csv("personality_preprocessing/train.csv", index=False)
-    dataset.to_csv("personality_preprocessing/test.csv", index=False)
+    dataset.to_csv("preprocessing/personality_preprocessing/train.csv", index=False)
+    dataset.to_csv("preprocessing/personality_preprocessing/test.csv", index=False)
 
 
 if __name__ == "__main__":
