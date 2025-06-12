@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
@@ -141,8 +142,11 @@ def main():
     )
 
     # save the processed dataset
-    dataset.to_csv("preprocessing/personality_preprocessing/train.csv", index=False)
-    dataset.to_csv("preprocessing/personality_preprocessing/test.csv", index=False)
+    output_dir = "preprocessing/personality_preprocessing"
+    os.makedirs(output_dir, exist_ok=True)
+
+    train_dataset.to_csv(os.path.join(output_dir, "train.csv"), index=False)
+    test_dataset.to_csv(os.path.join(output_dir, "train.csv"), index=False)
 
 
 if __name__ == "__main__":
